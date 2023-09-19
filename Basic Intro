@@ -94,5 +94,84 @@ Now what does this inittab file contain?
 		S and M are for single and multiuser respectively.
 
 
-	init.d is a directory that admin can start/stop the individual background process(also called as DAEMON)
+	init.d is a directory that admin can start/stop the individual background process(also called as DEAMON), start/stop deamon can start, stop, status, restart and reload by issuing the command.
 
+
+
+
+	CONGRATULATIONS!
+	ALL OF THE ABOVE FORMS THE VERY BASIC OF THE LINUX.
+
+
+	
+Let us now start with Linux OS;
+	1. Linux Commands: is a program which interacts with the kernel to perform functions called for. it can be built it shell command, or an executable shell file( also known as shell script).
+
+	Now, What is this shell?
+		It is a command line interpreter. The user can interact with the kernel using Shell by writing ASCII scripts. 
+
+NOTE: A rule while using linux machines is to never login with root unless you have to and at the inital setup, the reason being the protection mechanisms can be altered and and has access to everything by default. 
+
+NOTE: In linux machine the HELP equivalent is man(Manual) function. 
+			Syntax: man <command>
+
+			q - quit
+			f - scroll forward
+			b - scroll backward
+
+Basics: To execute a command type it's name and arguments at the command line.
+		eg: ls -l /etc
+			ls: command name
+			-l: optional flag
+			etc: arguments
+
+			If we have to redirect output then ls -l >output
+
+			If we have to redirect the input then wa<input
+
+			The output of one command can become input for other: ps aux | grep netscape | wc -1; the output of ps command is sent to grep, grep takes input from ps and searches for netscape and passign these lines to wc, wc takes the input and count the lines and its output going to console.
+
+			grep command searches files for one or more files, it does simple string, regular expression, and extended expression.
+
+Talking about file permissions, linux provides three kinds of permissions:
+	a. Read
+	b. Write
+	c. Execute
+
+	The command to see what options the file has is to use ls -l command. where the command displays permissions, owner, group,.
+
+	While displaying permissions the format would look something like this -rwxrwxrwx, - indicates directory flag (d=directory, l=link), rwx after that from left to right indicates the permissions owner has, after that rwx indicates group permission, and the remaining rwx indicates other permissions.
+
+	How do you change the permissions? by using chmod command. These permissions are encoded as an octal number. 
+
+Let's make a list of common commands and popular ones for file managements.
+	1. df : disk free space
+		df -k
+		df -h
+	2. du : How much disk space a directory	and its files contain
+		du <directory>
+		du -sk <directory>
+		du -sh <directory>
+	3. mount : Used to mount a filesystem
+		mount <filesystem>
+		mount -a
+	4. umount : unmounts a filesystem
+		umount <filesystem>
+	5. pwd: Print or list the present working directory with full path
+	6. rm : Remove files
+		rm -rf
+	7. rmdir : remove directory
+		rmdir <directory>
+	8. touch : Change the file timestamps to the current time. Also makes the file if it doesn't exists
+		touch <filename>
+	9. whereis : Locate the binary and manual page files for a command
+		whereis <program/command>
+	10. which : Show full path of commands where given commands reside
+		which <command>
+	11. gzip : zip file to gzip
+	12. gunzip : unzip file to gz file
+	13. tar : Archive files and directories.
+	14. zip : Compresses the file to a .zip file 
+	15. unzip : Uncompresses the file with .zip	extension
+	16. vi 
+	17. 
