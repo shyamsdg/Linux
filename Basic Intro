@@ -1,0 +1,55 @@
+Linux: It is operating system which is open source and mostly preferred OS for embedded developers as it gives more easy changes into the source code according to the user requirement. Linus Torvalds was frustrated by using UNIX OS and it's licensing so he decided to create his own OS which is Open source and can be easily modified by anyone and he was the one who created and started open source culture during 1990s era.
+
+Linux word originated by renaming the LINUS and UNIX word together, forming LINUX.
+
+Let's start with fundamentals of Linux Operating System:
+
+1. Operating System: It is a system which handles both hardware and software resources and it's operations
+2. Linux Operating System: Open source OS, which has kernel space. 
+3. What is kernel: Kernel is core part of OS, like heart in our body, It acts as a bridge between applications and data processing. In other terms it is a software program that loads at the very start-up of any system. 
+
+Now, why do we need kernel or what does it do?
+	Kernel as mentioned earlier is the core part of OS and it is the very first program at the start of the system, where it performs tasks like TASK scheduling, DISK Management, and Memory management. 
+
+NOTE: There are 2 spaces in operating system
+			Kernel space where the space is used for the internal applications
+			User space is used by the user to run or create his own applications
+
+4. There 5 types of Kernel:
+		Micro:  (uk), This kernel has different space for user and kernel. As a result size of the kernel and OS is reduced. 
+		Monolithic: Is where the Kernel and user have same memory space, What happens if both spaces are on the same memory? , 
+									Size increases, and as no shared spaces it executes and runs faster than other OS like UNIX, Linux. But if there's any crash in the code then whole system 
+									will fail. As single space they're not portable( if anything new code has to be included then whole space has to rewritten) 
+		Hybrid: This is combination of both monolithic and micro kernel, it can be known as extended version of a microkernel with additional properties of monolithic kernel.
+						It needs some additional code in kernel space to enhance the performance of the system.
+		Nano: The code of the kernel is very small, which means the code executing in the priviliged mode of the hardware is very small. Here, nano means it supports nanosecond 					clock resolution
+		Exo: This is still in developing mode and resource protection is kept seperated from management, which allows us to perform application specific customization
+Q) what type of Kernel is running in present OS?
+
+NOTE: you might have heard of Debian, Redhat, fedora and other type of Linux OS right?, basically these are packages/distributions of Linux.
+
+Now these are the very basic fundamentals of linux OS.
+
+Let us now start by learning the components of Linux system. There are three main bodies of the code. which I will ask you people to find it before I complete this particular topic.
+
+As you already know that user space and kernel space are the two spaces which define the type of OS like I mentioned above micro, monolithic, hybrid, nano and exo.
+Linux is monolithic OS.
+
+And In user Space we need User Interface, so that we as an user can interact with OS. 
+
+In user mode, we have standard utility programs, where the User Interace like Shell, editors, compilers etc are communicated.
+
+Next in the same user  mode, we also have Standard library, where using library interface we can interact with this standard library. These functions include open, close, read, write, fork etc.
+
+Next comes the kernel mode, where UNIX Operating system exists, and this is communicated using system call interface. where the operations include process management, memory management, the file system, I/O. 
+
+All these are on the hardware, like CPU, memory, disks, terminals etc.
+
+Now consicing all of the above what are the three main bodies of the code?
+	1. Standard utility program
+	2. Standard Library
+	3. Kernel
+These are the components of a Linux System
+
+Let's know more about THE KERNEL
+	
