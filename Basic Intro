@@ -53,3 +53,46 @@ These are the components of a Linux System
 
 Let's know more about THE KERNEL
 	
+	As I mentioned above Linux kernel uses a monolithic model.
+	The kernel code is executed in kernel mode with full access to all the physical resources of the computer. 
+
+Now, as each system is divided into subsystems. Even Linux Kernel have subsystem
+	1. Process Management
+	2. Memory Management
+	3. File System
+	4. Device Control
+	5. Networking
+
+1. Process Management: Performs Inter process communication to communicate between different processes, Creation and destroying of the process along with it's scheduling is also part of the process management.
+2. Memory Management: For us embedded engineers this is a major resource. A virtual	file system is built using this memory management.
+3. In File System almost everything is treated as file, and supports multiple files
+4. Device Control is where the device driver is used to access the device, almost every system maps to a phyical devcie.
+5. Networking subsystem collects, identifies, and dispatched to the process. routing and ARP are implementedwithin the kernel.
+
+Now any system needs bootloader to load the system. Bootloader is nothing but kernel loader, the task is to load linux kernel. GRUB and LILO are most popular Linux Boot loaders.
+
+What is GRUB?
+	GRand Unified Bootloader, OS independent Bootloader.
+
+There is a image for kernel known as Kernel Image, which is always stored on memory until it's turned off. It is non executable kernel, but a compressed kernel image.
+
+ZImage size is less than 512kb
+bzImage size is greater than 512kb
+
+Now the first thing the kernel does is to execute INIT program, which is root/parent of all processes executing on Linux.
+
+The first process the init starts is a script /etc/rc.d/rc.sysinit, this process is identified by process ID 1. It is responsible for starting system process as defined in /etc/inittab file.
+
+Now what does this inittab file contain?
+	1. This file describes which process are started at the bootup and during normal operation. 
+			/etc/init.d/boot
+			/etc/init.d/rc
+	2. The computer will be booted to the runlevel as defined by the initdefault directive; id:5:initdefault:
+
+	What is Runlevel?
+		is a configuration made in software which allows only a selected group of processes to exist. These runlevels can be from from 0 to 6
+		S and M are for single and multiuser respectively.
+
+
+	init.d is a directory that admin can start/stop the individual background process(also called as DAEMON)
+
