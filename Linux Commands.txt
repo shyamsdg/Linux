@@ -1,0 +1,75 @@
+// Linux command dictionary
+
+	1. df : disk free space
+		df -k
+		df -h
+	2. du : How much disk space a directory	and its files contain
+		du <directory>
+		du -sk <directory>
+		du -sh <directory>
+	3. mount : Used to mount a filesystem
+		mount <filesystem>
+		mount -a
+	4. umount : unmounts a filesystem
+		umount <filesystem>
+	5. pwd: Print or list the present working directory with full path
+	6. rm : Remove files
+		rm -rf
+	7. rmdir : remove directory
+		rmdir <directory>
+	8. touch : Change the file timestamps to the current time. Also makes the file if it doesn't exists
+		touch <filename>
+	9. whereis : Locate the binary and manual page files for a command
+		whereis <program/command>
+	10. which : Show full path of commands where given commands reside
+		which <command>
+	11. gzip : zip file to gzip
+	12. gunzip : unzip file to gz file
+	13. tar : Archive files and directories.
+	14. zip : Compresses the file to a .zip file 
+	15. unzip : Uncompresses the file with .zip	extension
+	16. vi : Editot with command and text mode
+	17. gedit : GUI text editor
+	18. tail : Look at the last 10 lines of the code
+		tail -f <filename>
+		tail -100 <filename>
+	19. head : Look at the last 10 lines of a file
+		head <filename>
+	20. su : switch user accounts. 
+		su <accountname>
+				Type exit to return to the previous account
+	21. dnsdomainname : shows system DNS domain name
+	22. hostname : used to show or set the name of your machine for networking
+	23. route : Show or manipulate the IP routing table 
+			route 
+			route add
+			route del
+	24. showmount : show mount information for an NFS server
+	25. ssh : Secure Login 
+			ssh <remote system name/ip>
+	26. ftp : File Transfer Protocol 
+			ftp <remote system name/ip>
+	27. ifconfig : configure a network interface
+			ifconfig eth0 address 172.31.2.2 netmask 255.255.0.0
+	28. ifdown : Shutdown the network interface
+			ifdown eth0
+	29. ifup : Brings up the network interface 
+			ifup eth0
+	30. exit : Terminates the shell
+	31. logout : Log the user off the system
+	32. poweroff : brings the system down
+	33. reboot : reboot the system
+	34. runlevel : List the current and previous level
+	35. shutdown : This command can be used to shutdown the system until the system is halted.
+			shutdown -h +10 'We will install a new disk. the system should be back online in three hours'
+						+time(minutes) until the system is halted
+
+	36. cal : Calendar
+	37. date : prints th system date and time
+	38. hwclock : Set or read the hardware CMOS clock
+	39. uptime : Reports how long the system has been running
+	40. info : provides the information of the system
+	41. echo : prints on the terminal
+	42. ls : list all the files
+	43. mkdir : Make new directory
+	44. 

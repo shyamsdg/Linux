@@ -1,0 +1,96 @@
+Linux Shell Scripting
+
+Let start with what we know,
+
+We have a raspberry pi board (SoC), which is a hardware Soc
+This hardware has Kernel to make use of the SoC, else the purpose having a SoC board doesn't serve.
+To use Hardware, we communicate with Kernel, but at the same time to communicate with Kernel we need a shell which is on top of the kernel
+
+What is this Shell again?, say I have an application basic like a calculator this application communicates with the shell and then passes on to the kernel to make best use of the resources available from the hardware which is nothing but a Raspberry Pi board.
+
+Now imagine a Linux System, where we have hardware, inside which we have Kernel along with File systems and Device Drivers. In this Kernel stage, kernel manages the hardware resources for the rest of the system.
+
+Next as explained earlier we have Shell, What will shell do is that it interprets the user commands, which is also responsible for finding the commands and starting their execution. Several different shells are available among which bash is the most popular shell.
+
+Now above the shell we know that we have user applications, like user commands which includes executable programs and scripts.
+
+Why do you think user commands, shell, kernel and hardware is required.
+
+user commands is the commands that we can easily remember to perform some action
+shell is command line interpreter which acts a translator to kernel
+
+***************************************************
+
+Shells:
+Now using the above information it is clear that it acts a platform that provides interface between user and an Operating System. Even shell is C code program.
+
+
+There are many types of shells present in the industry:
+	1. C shell - It has features like aliases and and command history.
+			csh
+
+			default prompt for bourne shell is % for root user
+
+			tcsh - is the advanced version of csh, with additional features such as command history, filename completion and fancier prompts
+	2. Bourne Shell - This was also developed by AT&T labs. Original UNIX shell, faster nd more preferred. default shell for solaris OS
+			sh
+			default prompt for bourne shell is $(ro #) for root user
+	3. Korn Shell - developed by AT&T, superset of Bourne shell, faster than C shell and also compatible with the same. It has built-in arithmetic and C-like arrays, functions and string manipulations
+			ksh
+	4. GNU Bourne Again Shell - it includes features from bourne and korn
+			bash
+	5. T shell - 
+			tsh
+	6. Z Shell - this is extended version of bash
+			zsh 
+
+
+	NOTE 1 : How to check which shell is used
+				echo $shell
+					here, shell is a environment variable, path is also environment variable, $ is value of the variable. echo is the shell command to print the message on terminal.
+	NOTE 2 : How many shells are present
+				cat/etc/shells
+					this will give above all shells explained
+
+
+
+Now that you have understood what shell is, where it resides and what is it's functionality, let's know more about the SHELL SCRIPT
+
+Shell script is a file containing a sequence of commands, which have variables and flow control statements like any other programming languages, that facilitates the repeated execution without having to be retyped n number of times.
+
+Two method to execute Shell Script:
+1 ./hello.sh requires executuion permission
+2 . hello.sh doesn't require execution permission
+
+Activity 1: Display helloworld! on terminal using shell scripting
+
+echo "helloworld!"
+
+Activity 2: Display helloworld! on terminal using shell scripting
+a = 10;
+echo $a
+
+NOTE: comments in shell is followed by #
+
+Every sucessful shell script gives Zero as return output, wheras unsuccessfull gives non zero number
+
+
+** If else using shell scripting **
+
+syntax:
+
+if [ &v1 option $v2]
+
+then
+
+else
+
+fi
+
+Key points:
+-lt : lesser than
+-gt : greater than
+-eq : equal to
+-le : lesser than equal to
+-ge : greater than equal to
+
