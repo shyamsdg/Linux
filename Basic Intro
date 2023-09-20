@@ -1,4 +1,4 @@
-Linux: It is operating system which is open source and mostly preferred OS for embedded developers as it gives more easy changes into the source code according to the user requirement. Linus Torvalds was frustrated by using UNIX OS and it's licensing so he decided to create his own OS which is Open source and can be easily modified by anyone and he was the one who created and started open source culture during 1990s era.
+Linux (Pronounced as LeeNux, not Liiiii Nux): It is operating system which is open source and mostly preferred OS for embedded developers as it gives more easy changes into the source code according to the user requirement. Linus Torvalds was frustrated by using UNIX OS and it's licensing so he decided to create his own OS which is Open source and can be easily modified by anyone and he was the one who created and started open source culture during 1990s era.
 
 Linux word originated by renaming the LINUS and UNIX word together, forming LINUX.
 
@@ -173,5 +173,56 @@ Let's make a list of common commands and popular ones for file managements.
 	13. tar : Archive files and directories.
 	14. zip : Compresses the file to a .zip file 
 	15. unzip : Uncompresses the file with .zip	extension
-	16. vi 
-	17. 
+	16. vi : Editot with command and text mode
+	17. gedit : GUI text editor
+	18. tail : Look at the last 10 lines of the code
+		tail -f <filename>
+		tail -100 <filename>
+	19. head : Look at the last 10 lines of a file
+		head <filename>
+	20. su : switch user accounts. 
+		su <accountname>
+				Type exit to return to the previous account
+	21. dnsdomainname : shows system DNS domain name
+	22. hostname : used to show or set the name of your machine for networking
+	23. route : Show or manipulate the IP routing table 
+			route 
+			route add
+			route del
+	24. showmount : show mount information for an NFS server
+	25. ssh : Secure Login 
+			ssh <remote system name/ip>
+	26. ftp : File Transfer Protocol 
+			ftp <remote system name/ip>
+	27. ifconfig : configure a network interface
+			ifconfig eth0 address 172.31.2.2 netmask 255.255.0.0
+	28. ifdown : Shutdown the network interface
+			ifdown eth0
+	29. ifup : Brings up the network interface 
+			ifup eth0
+	30. exit : Terminates the shell
+	31. logout : Log the user off the system
+	32. poweroff : brings the system down
+	33. reboot : reboot the system
+	34. runlevel : List the current and previous level
+	35. shutdown : This command can be used to shutdown the system until the system is halted.
+			shutdown -h +10 'We will install a new disk. the system should be back online in three hours'
+						+time(minutes) until the system is halted
+
+	36. cal : Calendar
+	37. date : prints th system date and time
+	38. hwclock : Set or read the hardware CMOS clock
+	39. uptime : Reports how long the system has been running
+	40. info : provides the information of the system
+	
+These are few commands that are required for basic usage. You don't have to remember everything in this list, as you use more then you'll remember more commands.
+
+You might be wondering why these commands are helpful, as a embedded developers we need it for debugging purpose.
+
+There's an attached document with some extra commands.
+
+
+This sums up the basics of the Linux Internal Topics and the basic information.
+
+Next Topic to focus on is the Linux Shell Scripting attached as a different file
+
