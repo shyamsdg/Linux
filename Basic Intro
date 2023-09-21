@@ -17,9 +17,10 @@ NOTE: There are 2 spaces in operating system
 
 4. There 5 types of Kernel:
 		Micro:  (uk), This kernel has different space for user and kernel. As a result size of the kernel and OS is reduced. 
-		Monolithic: Is where the Kernel and user have same memory space, What happens if both spaces are on the same memory? , 
+		Monolithic: Monolithic means one huge stone. Is where the Kernel and user have same memory space, What happens if both spaces are on the same memory? , 
 									Size increases, and as no shared spaces it executes and runs faster than other OS like UNIX, Linux. But if there's any crash in the code then whole system 
-									will fail. As single space they're not portable( if anything new code has to be included then whole space has to rewritten) 
+									will fail. As single space they're not portable( if anything new code has to be included then whole space has to rewritten) .
+
 		Hybrid: This is combination of both monolithic and micro kernel, it can be known as extended version of a microkernel with additional properties of monolithic kernel.
 						It needs some additional code in kernel space to enhance the performance of the system.
 		Nano: The code of the kernel is very small, which means the code executing in the priviliged mode of the hardware is very small. Here, nano means it supports nanosecond 					clock resolution
